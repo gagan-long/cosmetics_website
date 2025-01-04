@@ -19,7 +19,7 @@ $result = $conn->query($sql);
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Welcome to My Cosmetics Store</title>
     <link rel="stylesheet" href="../resources/css/header.css"> <!-- Link to your CSS -->
-    <link rel="stylesheet" href="../resources/css/footer.css"> <!-- Link to your CSS -->
+    
 
 </head>
 <body>

@@ -4,11 +4,22 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f9f9f9; /* Light background color */
+    height: 100%;
+    width: 100%;
+}
+main{
+    height: 100%;
+    width: 100%;
 }
 
 /* Hero Section */
 .hero {
-    background-color: #ff6f61; /* Coral background for hero section */
+    height: 100%;
+    width: 100%;
+    /* background-color: #ff6f61; Coral background for hero section */
+    background-image: url(banner.png);
+    background-size: cover;
+    background-position: center;
     color: white; /* White text color */
     text-align: center;
     padding: 50px 20px; /* Padding for top and bottom */
@@ -39,6 +50,8 @@ body {
 
 /* Featured Products Section */
 .featured-products {
+    height: 100%;
+    width: 100%;
     padding: 20px;
 }
 

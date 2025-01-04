@@ -62,6 +62,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         <form action="" method="POST">
             <input type="text" name="username" placeholder="Username" required>
             <input type="password" name="password" placeholder="Password" required>
+            <p><a href="forgot_password.php">forgot password.</a></p> <!-- Link to register page -->
             <button type="submit">Login</button>
         </form>
         <p><a href="register.php">Don't have an account? Register here.</a></p> <!-- Link to register page -->
