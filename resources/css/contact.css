@@ -1,0 +1,72 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9; /* Light background color */
+}
+
+/* Main Content Styles */
+main {
+    padding: 20px; /* Add padding to main content area */
+}
+
+/* Heading Style */
+main h2 {
+    text-align: center; /* Center the heading */
+    color: #333; /* Darker text color for contrast */
+}
+
+/* Form Styles */
+form {
+    max-width: 500px; /* Set a maximum width for the form */
+    margin: 0 auto; /* Center the form horizontally */
+    background-color: white; /* White background for the form */
+    padding: 20px; /* Padding inside the form */
+    border-radius: 8px; /* Rounded corners for the form */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Soft shadow effect */
+}
+
+/* Input Fields and Textarea Styles */
+form input[type="text"],
+form input[type="email"],
+form textarea {
+    width: 100%; /* Full width inputs */
+    padding: 10px; /* Padding inside inputs */
+    margin-bottom: 15px; /* Space below inputs */
+    border: 1px solid #ccc; /* Light gray border */
+    border-radius: 4px; /* Slightly rounded corners */
+    box-sizing: border-box; /* Include padding in width calculation */
+}
+
+/* Button Style */
+form button {
+    width: 100%; /* Full width button */
+    padding: 10px; /* Padding inside button */
+    background-color: #ff6f61; /* Coral background for button */
+    color: white; /* White text color for button */
+    border: none; /* Remove default border */
+    border-radius: 4px; /* Slightly rounded corners for button */
+    cursor: pointer; /* Pointer cursor on hover */
+}
+
+form button:hover {
+    background-color: #e65c50; /* Darker shade on hover for button */
+}
+
+/* Success Message Style */
+main p {
+    text-align: center; /* Center success message text */
+    color: green; /* Green color for success message */
+}
+
+/* Responsive Design for Smaller Screens*/
+@media (max-width: 600px) {
+    main h2 {
+        font-size: 1.8em; /* Smaller font size on mobile devices */
+    }
+
+    form {
+        padding: 15px; /* Reduce padding on smaller screens */
+    }
+}

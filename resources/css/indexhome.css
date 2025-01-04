@@ -1,0 +1,101 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9; /* Light background color */
+}
+
+/* Hero Section */
+.hero {
+    background-color: #ff6f61; /* Coral background for hero section */
+    color: white; /* White text color */
+    text-align: center;
+    padding: 50px 20px; /* Padding for top and bottom */
+}
+
+.hero h1 {
+    font-size: 2.5em; /* Large heading size */
+    margin-bottom: 10px; /* Space below heading */
+}
+
+.hero p {
+    font-size: 1.2em; /* Slightly larger paragraph text */
+}
+
+.hero .btn {
+    background-color: white; /* White button background */
+    color: #ff6f61; /* Coral text color for button */
+    padding: 10px 20px; /* Button padding */
+    border: none; /* Remove default border */
+    border-radius: 5px; /* Rounded corners for button */
+    cursor: pointer; /* Pointer cursor on hover */
+    text-decoration: none; /* Remove underline from links */
+}
+
+.hero .btn:hover {
+    background-color: #e65c50; /* Darker shade on hover */
+}
+
+/* Featured Products Section */
+.featured-products {
+    padding: 20px;
+}
+
+.featured-products h2 {
+    text-align: center;
+    color: #333; /* Darker text color for contrast */
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Responsive grid layout */
+    gap: 20px; /* Space between grid items */
+}
+
+.product-card {
+    background-color: white; /* White background for product cards */
+    border-radius: 8px; /* Rounded corners for product cards */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Soft shadow effect */
+    padding: 15px;
+    text-align: center; /* Centered text in product cards */
+}
+
+.product-card img {
+    max-width: 100%; /* Responsive image size */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.product-card h3 {
+    margin-top: 10px; /* Space above product name */
+}
+
+.product-card p {
+    margin-bottom: 10px; /* Space below price paragraph */
+}
+
+/* User Actions Section */
+.user-actions {
+    text-align: center;
+    padding: 20px;
+}
+
+.user-actions h2 {
+    color: #333; /* Darker text color for contrast */
+}
+
+.user-actions .btn {
+    background-color: #ff6f61; /* Coral button background */
+    color: white; /* White text color for button */
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.user-actions .btn:hover {
+    background-color: #e65c50; /* Darker shade on hover */
+}
+
+/* Footer Styles (if needed) */
+/* Include any footer styles here as necessary */
+

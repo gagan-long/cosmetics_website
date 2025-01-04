@@ -1,0 +1,64 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9; /* Light background color */
+    margin: 0;
+    padding: 0;
+}
+
+/* Container for the registration form */
+.registration-container {
+    width: 400px; /* Set a fixed width for the registration box */
+    margin: 100px auto; /* Center the container */
+    padding: 20px;
+    background-color: white; /* White background for the form */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
+}
+
+/* Heading Style */
+.registration-container h2 {
+    text-align: center;
+    color: #333; /* Darker text color for contrast */
+}
+
+/* Input Fields */
+.registration-container input[type="text"],
+.registration-container input[type="email"],
+.registration-container input[type="password"] {
+    width: 100%; /* Full width inputs */
+    padding: 10px; /* Padding inside inputs */
+    margin: 10px 0; /* Space between inputs */
+    border: 1px solid #ccc; /* Light gray border */
+    border-radius: 4px; /* Slightly rounded corners */
+    box-sizing: border-box; /* Include padding in width calculation */
+}
+
+/* Button Style */
+.registration-container button {
+    width: 100%; /* Full width button */
+    padding: 10px;
+    background-color: #ff6f61; /* Coral color for button */
+    color: white; /* White text color */
+    border: none; /* Remove default border */
+    border-radius: 4px; /* Slightly rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+}
+
+.registration-container button:hover {
+    background-color: #e65c50; /* Darker shade on hover */
+}
+
+/* Error Message Style */
+.registration-container p {
+    text-align: center;
+}
+
+/* Links Style */
+.registration-container a {
+    color: #ff6f61; /* Coral color for links */
+}
+
+.registration-container a:hover {
+    text-decoration: underline; /* Underline on hover for links */
+}

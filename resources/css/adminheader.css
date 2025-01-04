@@ -1,0 +1,51 @@
+/* admin_header.css */
+
+/* General Header Styles */
+header {
+    background-color: #343a40; /* Dark background for header */
+    color: white; /* White text color */
+    padding: 20px; /* Padding around the header */
+    text-align: center; /* Center align text */
+}
+
+h1 {
+    color: #ff6f61;
+    margin: 0; /* Remove default margin */
+    font-size: 2em; /* Larger font size for the title */
+}
+
+/* Navigation Styles */
+nav {
+    margin-top: 15px; /* Space between title and navigation */
+}
+
+nav ul {
+    list-style-type: none; /* Remove bullet points from list */
+    padding: 0; /* Remove default padding */
+}
+
+nav ul li {
+    display: inline; /* Display items in a single line */
+    margin-right: 20px; /* Space between navigation items */
+}
+
+nav ul li a {
+    color: white; /* White text for links */
+    text-decoration: none; /* Remove underline from links */
+    padding: 10px 15px; /* Padding around links for better click area */
+    border-radius: 5px; /* Rounded corners for links */
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+nav ul li a:hover {
+    background-color: #495057; /* Darker background on hover */
+}
+
+/* Responsive Styles */
+@media (max-width: 600px) {
+    nav ul li {
+        display: block; /* Stack navigation items vertically on small screens */
+        margin-bottom: 10px; /* Space between stacked items */
+        margin-right: 0; /* Reset right margin for stacked items */
+    }
+}

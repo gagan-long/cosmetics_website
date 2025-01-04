@@ -1,0 +1,22 @@
+/* Footer Styles */
+footer {
+    background-color: #ff6f61; /* Coral background color */
+    color: white; /* White text color */
+    text-align: center; /* Centered text */
+    padding: 15px 0; /* Padding for top and bottom */
+    position: relative; /* Position relative for layout control */
+    bottom: 0; /* Align footer at the bottom */
+    width: 100%; /* Full width footer */
+}
+
+footer p {
+    margin: 0; /* Remove default margin */
+    font-size: 14px; /* Font size for footer text */
+}
+
+/* Responsive Design for Footer */
+@media (max-width: 600px) {
+    footer p {
+        font-size: 12px; /* Smaller font size on mobile devices */
+    }
+}

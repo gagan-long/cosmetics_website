@@ -1,0 +1,53 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9; /* Light background color */
+}
+
+/* Header Styles */
+header {
+    background-color: #ff6f61; /* Coral background for header */
+    color: white; /* White text color */
+    padding: 20px; /* Padding around header */
+    text-align: center; /* Centered text */
+}
+
+header h1 {
+    margin: 0; /* Remove default margin */
+}
+
+/* Navigation Styles */
+nav {
+    margin-top: 10px; /* Space between heading and navigation */
+}
+
+nav ul {
+    list-style-type: none; /* Remove bullet points */
+    padding: 0; /* Remove default padding */
+}
+
+nav ul li {
+    display: inline; /* Display items in a row */
+    margin-right: 20px; /* Space between menu items */
+}
+
+nav ul li a {
+    color: white; /* White text color for links */
+    text-decoration: none; /* Remove underline from links */
+    font-weight: bold; /* Bold text for better visibility */
+}
+
+nav ul li a:hover {
+    text-decoration: underline; /* Underline on hover for links */
+}
+
+/* Main Content Styles (Optional) */
+main {
+    padding: 20px; /* Add padding to main content area if needed */
+}
+
+/* Footer Styles (if needed) */
+/* Include any footer styles here as necessary */
+

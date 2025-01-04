@@ -1,0 +1,60 @@
+/* styles.css */
+
+/* General Body Styles */
+body {
+    font-family: Arial, sans-serif; /* Clean sans-serif font */
+    background-color: #f4f4f4; /* Light grey background */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+}
+
+/* Main Content Styles */
+main {
+    max-width: 900px; /* Maximum width for the main content */
+    margin: 20px auto; /* Center the main content */
+    padding: 20px; /* Padding inside the main content */
+    background-color: white; /* White background for the main area */
+    border-radius: 8px; /* Rounded corners for the main area */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+/* Heading Styles */
+h2 {
+    color: #333; /* Darker text color for headings */
+    margin-bottom: 10px; /* Space below heading */
+}
+
+h3 {
+    color: #007BFF; /* Blue color for subheadings */
+}
+
+/* Paragraph Styles */
+p {
+    color: #555; /* Slightly lighter text color for paragraphs */
+}
+
+/* Statistics Section Styles */
+.stats {
+    margin-top: 20px; /* Space above statistics section */
+    padding: 15px; /* Padding inside statistics section */
+    background-color: #e9ecef; /* Light grey background for stats section */
+    border-radius: 5px; /* Rounded corners for stats section */
+}
+
+.stats ul {
+    list-style-type: none; /* Remove bullet points from list */
+    padding-left: 0; /* Remove default padding from list */
+}
+
+.stats li {
+    padding: 10px; /* Padding inside list items */
+    border-bottom: 1px solid #ccc; /* Light grey border below each item */
+}
+
+.stats li:last-child {
+    border-bottom: none; /* Remove border from last item */
+}
+
+/* Footer Styles (if needed) */
+/* You can add footer styles here if necessary */
+

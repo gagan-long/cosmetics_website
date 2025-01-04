@@ -1,0 +1,117 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9; /* Light background color */
+}
+
+/* Main Content Styles */
+main {
+    padding: 20px; /* Add padding to main content area */
+}
+
+/* Product Title */
+main h2 {
+    text-align: center; /* Center the product title */
+    color: #333; /* Darker text color for contrast */
+}
+
+/* Product Image */
+main img {
+    display: block; /* Center image block */
+    margin: 0 auto; /* Center image horizontally */
+    /* max-width: 100%; Responsive image size */
+    height: 40vh; /* Maintain aspect ratio */
+}
+
+/* Product Description and Price */
+main p {
+    text-align: center; /* Center text for description and price */
+    font-size: 1.1em; /* Slightly larger font size */
+}
+
+/* Add to Cart Form Styles */
+form {
+    text-align: center; /* Center form elements */
+    margin-top: 20px; /* Space above form */
+}
+
+form input[type="number"] {
+    width: 60px; /* Fixed width for quantity input */
+    padding: 5px; /* Padding for input field */
+}
+
+/* Button Styles */
+button {
+    padding: 10px 20px; /* Button padding */
+    background-color: #ff6f61; /* Coral background for button */
+    color: white; /* White text color for button */
+    border: none; /* Remove default border */
+    border-radius: 4px; /* Rounded corners for button */
+    cursor: pointer; /* Pointer cursor on hover */
+}
+
+button:hover {
+    background-color: #e65c50; /* Darker shade on hover for button */
+}
+
+/* Reviews Section Styles */
+.reviews {
+    margin-top: 30px; /* Space above reviews section */
+}
+
+.reviews h3 {
+    color: #333; /* Darker text color for review heading */
+}
+
+.reviews ul {
+    list-style-type: none; /* Remove bullet points from list */
+    padding-left: 0; /* Remove default padding from list */
+}
+
+.reviews li {
+    background-color: white; /* White background for review items */
+    border-radius: 8px; /* Rounded corners for review items */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Soft shadow effect */
+    padding: 15px; /* Padding inside review items */
+    margin-bottom: 10px; /* Space between review items */
+}
+
+.reviews strong {
+    display: block; /* Make username bold and block level for spacing */
+}
+
+/* Submit Review Section Styles */
+.submit-review {
+    margin-top: 30px; /* Space above submit review section */
+}
+
+.submit-review textarea {
+    width: 100%; /* Full width textarea */
+    height: 100px; /* Fixed height for textarea */
+    padding: 10px; /* Padding inside textarea */
+    border-radius: 4px; /* Rounded corners for textarea */
+}
+
+.submit-review label {
+    display: block; /* Label as block element for better spacing */
+}
+
+/* Responsive Design for Smaller Screens*/
+@media (max-width: 600px) {
+    main h2 {
+        font-size: 1.8em; /* Smaller font size on mobile devices */
+    }
+
+    button, form input[type="number"] {
+        width: auto; /* Allow buttons and inputs to resize on smaller screens */
+        margin-top: 10px;
+        margin-bottom: 10px;
+        display:block;
+        text-align:center;
+        margin-left:auto;
+        margin-right:auto;
+        
+     }
+}
