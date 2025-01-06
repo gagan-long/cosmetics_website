@@ -1,22 +1,56 @@
-/* Footer Styles */
-footer {
-    background-color: #ff6f61; /* Coral background color */
-    color: white; /* White text color */
-    text-align: center; /* Centered text */
-    padding: 15px 0; /* Padding for top and bottom */
-    position: relative; /* Position relative for layout control */
-    bottom: 0; /* Align footer at the bottom */
-    width: 100%; /* Full width footer */
+footer{
+    background-color: #000;
+    color: #fff;
+    height: 80%;
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* gap: 6.5vw; */
+    padding: 0 100px;
+   
+  
+}
+div{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 80%;
+    width: 20%;
+
 }
 
-footer p {
+footer>h1{
+    font-size: 4vw;
+    /* margin-bottom: 3vh; */
+}
+
+
+
+
+ a{
+    text-decoration: none;
+    color: #fff;
+    /* margin-top: 2vh; */
+    
+    /* margin-bottom: 2vh; */
+}
+
+ h4{
+    font-size: 3vw;
+    /* margin-bottom: ; */
+}
+
+
+#f5 p {
     margin: 0; /* Remove default margin */
     font-size: 14px; /* Font size for footer text */
 }
 
 /* Responsive Design for Footer */
 @media (max-width: 600px) {
-    footer p {
+    footer #f5 p {
         font-size: 12px; /* Smaller font size on mobile devices */
     }
 }

@@ -18,7 +18,12 @@ $result = $conn->query($sql);
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Welcome to My Cosmetics Store</title>
-    <link rel="stylesheet" href="../resources/css/header.css"> <!-- Link to your CSS -->
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+    rel="stylesheet" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=shopping_bag" />
+    <link  href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css"  rel="stylesheet"/>
+    <link rel="stylesheet" href="../resources/css/header.css"> 
     
 
 </head>
