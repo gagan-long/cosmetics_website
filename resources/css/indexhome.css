@@ -111,42 +111,41 @@ html,body {
 
 
 
-/* featured products */
+/* featured products
 .featured-products {
-    /* height: 100vh;
-    width: 100vw; */
+  
     padding: 2rem 1rem;
-    /* Equivalent to py-8 px-4 */
+   
 }
 
 .featured-products h2 {
     text-align: center;
     color: #4a5568;
-    /* Equivalent to text-gray-800 */
+  
     font-size: 1.5rem;
-    /* Equivalent to text-2xl */
+    
     margin-bottom: 1.5rem;
-    /* Equivalent to mb-6 */
+   
 }
 
 .product-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    /* Responsive grid layout */
+    display: flex;
+    
     gap: 1.5rem;
-    /* Equivalent to gap-6 */
+   
 }
 
 .product-card {
-    height: 50vh;
+    height: auto;
     width: auto;
+    max-width: 600px;
     background-color: white;
     border-radius: 0.5rem;
-    /* Equivalent to rounded-lg */
+    
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    /* Shadow effect */
+  
     padding: 1rem;
-    /* Equivalent to p-4 */
+    
     text-align: center;
 }
 
@@ -154,25 +153,25 @@ html,body {
     width: 100%;
     height: auto;
     margin-bottom: 0.75rem;
-    /* Equivalent to mb-3 */
+   
 }
 
 .product-card h3 {
     font-size: 1.125rem;
-    /* Equivalent to text-lg */
+    
     font-weight: bold;
     margin-bottom: 0.25rem;
-    /* Equivalent to mb-1 */
+    
 }
 
 .view-details {
     color: #3182ce;
-    /* Equivalent to text-blue-500 */
+   
 }
 
 .view-details:hover {
     text-decoration: underline;
-    /* Equivalent to hover:underline */
+   
 }
 
 .get-started {
@@ -183,7 +182,7 @@ html,body {
 .get-started h2 {
     color: #4a5568;
 
-}
+} */
 
 /* section 2  */
 #sec2 {

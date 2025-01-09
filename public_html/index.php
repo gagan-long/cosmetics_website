@@ -18,7 +18,96 @@ $result = $conn->query($sql);
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>Welcome to My Cosmetics Store</title>
-   <link rel="stylesheet" href="../resources/css/indexhome.css">    
+   <link rel="stylesheet" href="../resources/css/indexhome.css">  
+   <style>
+   /* General Styles */
+/* body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+    margin: 0;
+    padding: 20px;
+} */
+
+/* Featured Products Section */
+.featured-products {
+    height: 100%;
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    overflow: auto;
+}
+
+/* Heading Styles */
+.featured-products h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Product Grid */
+.product-grid {
+    height:80%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    /* display: grid; */
+    /* grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); */
+    overflow: auto;
+    align-items: center;
+    justify-content: center;
+    gap: 20px; /* Space between product cards */
+}
+
+/* Product Card Styles */
+.product-card {
+    min-width: 250px;
+    height: auto;
+    max-height: 80%;
+    background-color: #fff;
+    border: 1px solid #e1e1e1;
+    border-radius: 8px;
+    /* overflow: hidden; Ensures rounded corners are applied to images */
+    transition: transform 0.3s ease; /* Animation for hover effect */
+}
+
+.product-card:hover {
+    transform: scale(1.05); /* Slightly enlarge card on hover */
+}
+
+.product-card img {
+    /* width: 100%;  */
+    height: 30vh; /* Maintain aspect ratio */
+}
+
+.product-card h3 {
+    font-size: 1.2em;
+    color: #333;
+    margin: 10px; /* Space around title */
+}
+
+.product-card p {
+    color: #666; /* Lighter text for description and price */
+    margin: 10px; /* Space around text */
+}
+
+.product-card .view-details {
+    display: block;
+    text-align: center;
+    background-color: #007bff; /* Button color */
+    color: white; /* Button text color */
+    padding: 10px;
+    text-decoration: none; /* Remove underline from link */
+    border-radius: 5px; /* Rounded corners for button */
+}
+
+.product-card .view-details:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+}
+
+   </style>  
 
 </head>
 <body class="body">

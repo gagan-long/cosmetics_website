@@ -34,7 +34,7 @@ $products = $productModel->getAllProducts(); // Fetch all products
         <div class="product-grid">
             <?php if (!empty($products)): ?>
                 <?php foreach ($products as $product): ?>
-                    <div class="product-card">
+                    <div class="product-card" >
                         <img src="../resources/images/products/<?php echo htmlspecialchars($product['image_url']); ?>" alt="<?php echo htmlspecialchars($product['name']); ?>">
                         <h3><?php echo htmlspecialchars($product['name']); ?></h3>
                         <p><?php echo htmlspecialchars($product['description']); ?></p>
