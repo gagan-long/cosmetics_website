@@ -48,7 +48,7 @@ $products = $productModel->getAllProducts(); // Fetch all products
         </div>
     </main>
 
-    <?php include '../includes/footer.php'; ?> <!-- Include the footer -->
+ 
 
 </body>
 </html>
