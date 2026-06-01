@@ -45,18 +45,6 @@ A full-featured e-commerce web application for a cosmetics store, built with PHP
 
 ```
 cosmetics_website/
-├── admin/                  # Admin panel pages
-│   ├── index.php           # Admin dashboard
-│   ├── login.php           # Admin login
-│   ├── manage_products.php # Add / edit / delete products
-│   ├── manage_categories.php
-│   ├── manage_users.php
-│   ├── manage_orders.php
-│   ├── manage_payments.php
-│   ├── refund_payment.php
-│   ├── update_order_status.php
-│   └── settings.php
-│
 ├── controllers/            # Business logic (MVC controllers)
 │   ├── product_controller.php
 │   ├── user_controller.php
@@ -70,7 +58,7 @@ cosmetics_website/
 │   ├── order_model.php
 │   └── payment_model.php
 │
-├── public_html/            # Customer-facing pages
+├── public_html/            # Web root (customer + admin pages)
 │   ├── index.php           # Homepage
 │   ├── products.php        # Product listing
 │   ├── product_detail.php  # Single product view
@@ -83,19 +71,29 @@ cosmetics_website/
 │   ├── forgot_password.php / reset_password.php
 │   ├── about.php
 │   ├── contact.php
-│   └── logout.php
+│   ├── logout.php
+│   ├── admin/              # Admin panel pages
+│   │   ├── index.php
+│   │   ├── login.php
+│   │   ├── manage_products.php
+│   │   ├── manage_categories.php
+│   │   ├── manage_users.php
+│   │   ├── manage_orders.php
+│   │   ├── manage_payments.php
+│   │   ├── refund_payment.php
+│   │   ├── update_order_status.php
+│   │   └── settings.php
+│   └── resources/          # Static assets exposed by web server
+│       ├── css/
+│       ├── js/
+│       ├── images/
+│       ├── fonts/
+│       └── PHPMailer/
 │
 ├── includes/               # Shared PHP includes
 │   ├── db_connection.php   # PDO database connection (singleton)
 │   ├── header.php / footer.php
 │   └── admin_header.php / admin_footer.php
-│
-├── resources/              # Static assets
-│   ├── css/                # Stylesheets
-│   ├── js/                 # JavaScript files
-│   ├── images/             # Site images & product photos
-│   ├── fonts/              # Custom fonts
-│   └── PHPMailer/          # PHPMailer library
 │
 ├── sql_script/
 │   └── create_tables.sql   # Full database schema
@@ -159,7 +157,7 @@ The application uses a single MySQL database (`cosmetics_db`) with the following
 
 4. **Configure your web server**
 
-   Point the document root to the `public_html/` directory (for the customer site) or the project root (to also expose `/admin`).
+   Point the document root to the `public_html/` directory.
 
    Example Apache virtual host:
    ```apache
