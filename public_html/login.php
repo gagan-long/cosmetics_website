@@ -53,7 +53,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>User Login</title>
-    <link rel="stylesheet" href="../resources/css/userlogin.css"> <!-- Link to your CSS -->
+    <link rel="stylesheet" href="resources/css/userlogin.css"> <!-- Link to your CSS -->
 </head>
 <body>
     <div class="login-container">
@@ -67,7 +67,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         </form>
         <p><a href="register.php">Don't have an account? Register here.</a></p> <!-- Link to register page -->
         <p><a href="../admin/login.php">Login as Admin .</a></p> <!-- Link to register page -->
-        <p><a href="../public_html/index.php">Go to Website</a></p> <!-- Optional link back to website -->
+        <p><a href="index.php">Go to Website</a></p> <!-- Optional link back to website -->
     </div>
 </body>
 </html>

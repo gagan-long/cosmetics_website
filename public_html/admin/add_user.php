@@ -7,7 +7,7 @@ if (!isset($_SESSION['user_id'])) {
     exit();
 }
 
-include_once '../models/user_model.php'; // Include UserModel
+include_once '../../models/user_model.php'; // Include UserModel
 
 // Create an instance of UserModel
 $userModel = new UserModel();

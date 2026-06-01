@@ -23,7 +23,7 @@ $products = $productModel->getAllProducts(); // Fetch all products
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Our Products</title>
-    <link rel="stylesheet" href="../resources/css/products.css"> <!-- Link to your CSS -->
+    <link rel="stylesheet" href="resources/css/products.css"> <!-- Link to your CSS -->
 </head>
 <body>
 
@@ -35,7 +35,7 @@ $products = $productModel->getAllProducts(); // Fetch all products
             <?php if (!empty($products)): ?>
                 <?php foreach ($products as $product): ?>
                     <div class="product-card" >
-                        <img src="../resources/images/products/<?php echo htmlspecialchars($product['image_url']); ?>" alt="<?php echo htmlspecialchars($product['name']); ?>">
+                        <img src="resources/images/products/<?php echo htmlspecialchars($product['image_url']); ?>" alt="<?php echo htmlspecialchars($product['name']); ?>">
                         <h3><?php echo htmlspecialchars($product['name']); ?></h3>
                         <p><?php echo htmlspecialchars($product['description']); ?></p>
                         <p>Price: $<?php echo number_format($product['price'], 2); ?></p>

@@ -32,7 +32,7 @@ $shipping_address = isset($_SESSION['shipping_address']) ? $_SESSION['shipping_a
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>User Dashboard</title>
-    <link rel="stylesheet" href="../resources/css/user_dashboard.css"> <!-- Link to your CSS -->
+    <link rel="stylesheet" href="resources/css/user_dashboard.css"> <!-- Link to your CSS -->
 </head>
 <body>
 

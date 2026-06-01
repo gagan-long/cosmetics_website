@@ -7,7 +7,7 @@ if (!isset($_SESSION['user_id'])) {
     exit();
 }
 
-include_once '../models/product_model.php'; // Include ProductModel
+include_once '../../models/product_model.php'; // Include ProductModel
 
 // Create an instance of ProductModel
 $productModel = new ProductModel();

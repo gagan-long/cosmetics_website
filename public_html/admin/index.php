@@ -8,9 +8,9 @@ if (!isset($_SESSION['user_id']) || $_SESSION['role'] !== 'admin') {
 }
 
 // Include necessary models for fetching statistics
-include_once '../models/product_model.php'; // Include ProductModel
-include_once '../models/order_model.php';   // Include OrderModel
-include_once '../models/user_model.php';    // Include UserModel
+include_once '../../models/product_model.php'; // Include ProductModel
+include_once '../../models/order_model.php';   // Include OrderModel
+include_once '../../models/user_model.php';    // Include UserModel
 
 // Create instances of models
 $productModel = new ProductModel();
@@ -23,7 +23,7 @@ $totalOrders = count($orderModel->getAllOrders());
 $totalUsers = count($userModel->getAllUsers());
 
 // Include header from the includes directory
-include_once '../includes/admin_header.php'; // Adjusted path for header
+include_once '../../includes/admin_header.php'; // Adjusted path for header
 ?>
 
 <!DOCTYPE html>
@@ -55,7 +55,7 @@ include_once '../includes/admin_header.php'; // Adjusted path for header
 
 </main>
 
-<?php include_once '../includes/admin_footer.php'; // Adjusted path for footer ?>
+<?php include_once '../../includes/admin_footer.php'; // Adjusted path for footer ?>
 
 </body>
 </html>

@@ -78,7 +78,7 @@ $result_reviews = $stmt_reviews->fetchAll(PDO::FETCH_ASSOC);
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title><?php echo htmlspecialchars($product['name']); ?></title>
-   <link rel="stylesheet" href="../resources/css/productdetail.css"> <!-- Link to your CSS -->
+   <link rel="stylesheet" href="resources/css/productdetail.css"> <!-- Link to your CSS -->
 </head>
 <body>
 
@@ -86,7 +86,7 @@ $result_reviews = $stmt_reviews->fetchAll(PDO::FETCH_ASSOC);
 
    <main>
        <h2><?php echo htmlspecialchars($product['name']); ?></h2>
-       <img src="../resources/images/products/<?php echo htmlspecialchars($product['image_url']); ?>" alt="<?php echo htmlspecialchars($product['name']); ?>">
+       <img src="resources/images/products/<?php echo htmlspecialchars($product['image_url']); ?>" alt="<?php echo htmlspecialchars($product['name']); ?>">
        <p><?php echo htmlspecialchars($product['description']); ?></p>
        <p>Price: $<?php echo number_format($product['price'], 2); ?></p>
 

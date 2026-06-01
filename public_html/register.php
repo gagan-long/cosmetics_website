@@ -48,7 +48,7 @@ $conn = null;
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>User Registration</title>
-    <link rel="stylesheet" href="../resources/css/userregister.css"> <!-- Link to your CSS -->
+    <link rel="stylesheet" href="resources/css/userregister.css"> <!-- Link to your CSS -->
 </head>
 <body>
     <div class="registration-container">
@@ -61,7 +61,7 @@ $conn = null;
             <button type="submit">Register</button>
         </form>
         <p><a href="login.php">Already have an account? Login here.</a></p> <!-- Link to register page -->
-        <p><a href="../public_html/index.php">Go to Website</a></p> <!-- Optional link back to website -->
+        <p><a href="index.php">Go to Website</a></p> <!-- Optional link back to website -->
     </div>
 </body>
 </html>

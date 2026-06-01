@@ -7,16 +7,17 @@ if (!isset($_SESSION['user_id'])) {
     exit();
 }
 
-include_once '../models/user_model.php'; // Include UserModel for fetching users
+include_once '../../models/payment_model.php'; // Include PaymentModel
 
-// Create an instance of UserModel
-$userModel = new UserModel();
+// Create an instance of PaymentModel
+$paymentModel = new PaymentModel();
 
-// Fetch all users
+// Fetch all payments using the model method.
+$payments = [];
 try {
-    $users = $userModel->getAllUsers(); // Fetch users from the model
+    $payments = $paymentModel->getPaymentHistory($_SESSION['user_id']); // Fetch payment history for the logged-in user
 } catch (Exception $e) {
-    die("Error fetching users: " . htmlspecialchars($e->getMessage()));
+    die("Error fetching payments: " . htmlspecialchars($e->getMessage()));
 }
 ?>
 
@@ -25,10 +26,9 @@ try {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Manage Users</title>
-    <link rel="stylesheet" href="../resources/css/manageuser.css"> 
+    <title>Manage Payments</title>
     <style>
-    
+    /* manage_payments_styles.css */
 
 /* General Body Styles */
 body {
@@ -38,8 +38,8 @@ body {
     padding: 20px; /* Padding around the body */
 }
 
-/* User Management Container Styles */
-.user-management-container {
+/* Payment Management Container Styles */
+.payment-management-container {
     max-width: 900px; /* Maximum width for the container */
     margin: 0 auto; /* Center the container */
     padding: 20px; /* Padding inside the container */
@@ -86,44 +86,44 @@ tr:hover {
     background-color: #f1f1f1; /* Light grey background on row hover */
 }
 
-/* No Users Found Message Styles */
-td[colspan="5"] {
-    text-align: center; /* Center align message when no users are found */
+/* No Payments Found Message Styles */
+td[colspan="7"] {
+    text-align: center; /* Center align message when no payments are found */
     font-style: italic; /* Italicize message text */
 }
 
-    </style><!-- Link to your CSS -->
+    </style>
 </head>
 <body>
-    <div class="user-management-container">
-        <h2>Manage Users</h2>
-        <!-- Link to add new user -->
-        <p><a href="add_user.php">Add New User/Admin</a></p>
+    <div class="payment-management-container">
+        <h2>Manage Payments</h2>
         <a href="index.php">Dashboard</a>
-        
+
         <table>
             <tr>
-                <th>User ID</th>
-                <th>Username</th>
-                <th>Email</th>
-                <th>Role</th>
+                <th>Payment ID</th>
+                <th>Order ID</th>
+                <th>Order Date</th>
+                <th>Amount</th>
+                <th>Payment Method</th>
+                <th>Status</th>
                 <th>Actions</th>
             </tr>
-            <?php if ($users): ?>
-                <?php foreach ($users as $user): ?>
+
+            <?php if (!empty($payments)): ?>
+                <?php foreach ($payments as $payment): ?>
                 <tr>
-                    <td><?php echo htmlspecialchars($user['user_id']); ?></td>
-                    <td><?php echo htmlspecialchars($user['username']); ?></td>
-                    <td><?php echo htmlspecialchars($user['email']); ?></td>
-                    <td><?php echo htmlspecialchars($user['role']); ?></td>
-                    <td>
-                        <a href="edit_user.php?id=<?php echo htmlspecialchars($user['user_id']); ?>">Edit</a> |
-                        <a href="delete_user.php?id=<?php echo htmlspecialchars($user['user_id']); ?>">Delete</a>
-                    </td>
+                    <td><?php echo htmlspecialchars($payment['payment_id']); ?></td>
+                    <td><?php echo htmlspecialchars($payment['order_id']); ?></td>
+                    <td><?php echo htmlspecialchars($payment['order_date']); ?></td>
+                    <td><?php echo number_format($payment['amount'], 2); ?></td>
+                    <td><?php echo htmlspecialchars($payment['payment_method']); ?></td>
+                    <td><?php echo htmlspecialchars($payment['status']); ?></td>
+                    <td><a href="refund_payment.php?id=<?php echo htmlspecialchars($payment['payment_id']); ?>">Refund</a></td> <!-- Refund link -->
                 </tr>
                 <?php endforeach; ?>
             <?php else: ?>
-                <tr><td colspan="5">No users found.</td></tr> <!-- Message when no users are available -->
+                <tr><td colspan="7">No payments found.</td></tr> <!-- Message when no payments are available -->
             <?php endif; ?>
         </table>
 
@@ -132,4 +132,3 @@ td[colspan="5"] {
     <!-- Optional footer -->
 </body>
 </html>
-

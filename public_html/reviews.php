@@ -58,7 +58,7 @@ $result_reviews = $stmt_reviews->fetchAll(PDO::FETCH_ASSOC);
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Reviews for <?php echo htmlspecialchars($result_product['name']); ?></title>
-    <link rel="stylesheet" href="../resources/css/styles.css"> <!-- Link to your CSS -->
+    <link rel="stylesheet" href="resources/css/styles.css"> <!-- Link to your CSS -->
 </head>
 <body>
 

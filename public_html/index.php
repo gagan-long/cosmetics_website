@@ -18,7 +18,7 @@ $result = $conn->query($sql);
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>Welcome to My Cosmetics Store</title>
-   <link rel="stylesheet" href="../resources/css/indexhome.css">  
+   <link rel="stylesheet" href="resources/css/indexhome.css">  
    <style>
    /* General Styles */
 /* body {
@@ -130,7 +130,7 @@ $result = $conn->query($sql);
             <div class="product-grid">
                 <?php while ($product = $result->fetch(PDO::FETCH_ASSOC)): ?>
                     <div class="product-card">
-                        <img src="../resources/images/products/<?php echo htmlspecialchars($product['image_url']); ?>" alt="<?php echo htmlspecialchars($product['name']); ?>">
+                        <img src="resources/images/products/<?php echo htmlspecialchars($product['image_url']); ?>" alt="<?php echo htmlspecialchars($product['name']); ?>">
                         <h3><?php echo htmlspecialchars($product['name']); ?></h3>
                         <p><?php echo htmlspecialchars($product['description']); ?></p>
                         <p>Price: ₹<?php echo number_format($product['price'], 2); ?></p>
@@ -152,7 +152,7 @@ $result = $conn->query($sql);
             </div>
             <!-- <div id="sec2-d2"> -->
                 <div id="p3-img">
-                    <img src="../resources/images/sec2.jpg" alt="">
+                    <img src="resources/images/sec2.jpg" alt="">
                 </div>
             <!-- </div> -->
     </section>
@@ -161,7 +161,7 @@ $result = $conn->query($sql);
             <div class="product-grid">
                 <?php while ($product = $result->fetch(PDO::FETCH_ASSOC)): ?>
                     <div class="product-card">
-                        <img src="../resources/images/products/<?php echo htmlspecialchars($product['image_url']); ?>" alt="<?php echo htmlspecialchars($product['name']); ?>">
+                        <img src="resources/images/products/<?php echo htmlspecialchars($product['image_url']); ?>" alt="<?php echo htmlspecialchars($product['name']); ?>">
                         <h3><?php echo htmlspecialchars($product['name']); ?></h3>
                         <p><?php echo htmlspecialchars($product['description']); ?></p>
                         <p>Price: ₹<?php echo number_format($product['price'], 2); ?></p>
@@ -225,11 +225,11 @@ $result = $conn->query($sql);
             <h1>Follow Us</h1>
             <p>@beauty.store</p>
             <div class="scroller">
-                <img src="../resources/images/img/pexels-pixabay-458766.jpg" alt="">
-                <img src="../resources/images/img/pexels-anastasiya-gepp-654466-1462637.jpg" alt="">
-                <img src="../resources/images/img/pexels-designecologist-1367225.jpg" alt="">
-                <img src="../resources/images/img/banner.JPG" alt="">
-                <img src="../resources/images/img/pexels-pixabay-458766.jpg" alt="">
+                <img src="resources/images/img/pexels-pixabay-458766.jpg" alt="">
+                <img src="resources/images/img/pexels-anastasiya-gepp-654466-1462637.jpg" alt="">
+                <img src="resources/images/img/pexels-designecologist-1367225.jpg" alt="">
+                <img src="resources/images/img/banner.JPG" alt="">
+                <img src="resources/images/img/pexels-pixabay-458766.jpg" alt="">
             </div>
         </section>
 

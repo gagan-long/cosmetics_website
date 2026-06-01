@@ -5,9 +5,9 @@ session_start();
 include_once '../includes/db_connection.php'; // Include database connection
 
 // Include PHPMailer classes
-require '../resources/PHPMailer/src/PHPMailer.php';
-require '../resources/PHPMailer/src/SMTP.php';
-require '../resources/PHPMailer/src/Exception.php';
+require 'resources/PHPMailer/src/PHPMailer.php';
+require 'resources/PHPMailer/src/SMTP.php';
+require 'resources/PHPMailer/src/Exception.php';
 
 // Use PHPMailer's namespace
 use PHPMailer\PHPMailer\PHPMailer;
@@ -58,7 +58,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                         // Email content
                         $mail->isHTML(true);
                         $mail->Subject = 'Password Reset Request';
-                        $reset_link = "http://localhost/cosmetics_website/public_html/reset_password.php?token=$token";
+                        $reset_link = "http://localhost/reset_password.php?token=$token";
                         $mail->Body = "Click this link to reset your password: <a href='$reset_link'>$reset_link</a>";
                         
                         // Send the email

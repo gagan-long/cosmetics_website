@@ -10,7 +10,7 @@
             <li><a href="../admin/manage_orders.php">Manage Orders</a></li>
             <li><a href="../admin/manage_payments.php">Manage Payments</a></li>
             <li><a href="../admin/settings.php">Settings</a></li>
-            <li><a href="../public_html/index.php">Go to Website</a></li> <!-- Link back to public site -->
+            <li><a href="../index.php">Go to Website</a></li> <!-- Link back to public site -->
             <li><a href="logout.php">Logout</a></li> <!-- Logout link -->
         </ul>
     </nav>

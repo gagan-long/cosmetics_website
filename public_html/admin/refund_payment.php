@@ -5,7 +5,7 @@ if (!isset($_SESSION['user_id'])) {
     exit();
 }
 
-include_once '../includes/db_connection.php';
+include_once '../../includes/db_connection.php';
 
 // Get payment ID from query string
 $payment_id = $_GET['id'];

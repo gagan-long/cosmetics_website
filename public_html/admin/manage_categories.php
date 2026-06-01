@@ -8,7 +8,7 @@ if (!isset($_SESSION['user_id']) || $_SESSION['role'] !== 'admin') {
 }
 
 // Include the CategoryModel
-include_once '../models/category_model.php'; 
+include_once '../../models/category_model.php'; 
 
 // Create an instance of CategoryModel
 $categoryModel = new CategoryModel();

@@ -1,6 +1,6 @@
 <?php
 session_start();
-include_once '../models/user_model.php'; // Include UserModel for authentication
+include_once '../../models/user_model.php'; // Include UserModel for authentication
 
 // Initialize error message variable
 $error_message = "";

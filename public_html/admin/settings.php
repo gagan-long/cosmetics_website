@@ -8,7 +8,7 @@ if (!isset($_SESSION['user_id']) || $_SESSION['role'] !== 'admin') {
 }
 
 // Include the database connection function
-include_once '../includes/db_connection.php';
+include_once '../../includes/db_connection.php';
 
 // Create a PDO instance
 $conn = getDatabaseConnection(); // Assuming getDatabaseConnection() is defined in db_connection.php

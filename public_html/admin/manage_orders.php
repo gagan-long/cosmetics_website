@@ -7,7 +7,7 @@ if (!isset($_SESSION['user_id'])) {
     exit();
 }
 
-include_once '../models/order_model.php'; // Include OrderModel
+include_once '../../models/order_model.php'; // Include OrderModel
 
 // Create an instance of OrderModel
 $orderModel = new OrderModel();
