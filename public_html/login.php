@@ -66,7 +66,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             <button type="submit">Login</button>
         </form>
         <p><a href="register.php">Don't have an account? Register here.</a></p> <!-- Link to register page -->
-        <p><a href="../admin/login.php">Login as Admin .</a></p> <!-- Link to register page -->
+        <p><a href="admin/login.php">Login as Admin .</a></p> <!-- Link to register page -->
         <p><a href="index.php">Go to Website</a></p> <!-- Optional link back to website -->
     </div>
 </body>

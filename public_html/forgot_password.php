@@ -58,7 +58,10 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                         // Email content
                         $mail->isHTML(true);
                         $mail->Subject = 'Password Reset Request';
-                        $reset_link = "http://localhost/reset_password.php?token=$token";
+                        $scheme = (!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off') ? 'https' : 'http';
+                        $host = $_SERVER['HTTP_HOST'] ?? 'localhost';
+                        $basePath = rtrim(dirname($_SERVER['PHP_SELF'] ?? ''), '/\\');
+                        $reset_link = $scheme . '://' . $host . ($basePath ? $basePath : '') . '/reset_password.php?token=' . urlencode($token);
                         $mail->Body = "Click this link to reset your password: <a href='$reset_link'>$reset_link</a>";
                         
                         // Send the email
